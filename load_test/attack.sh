@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Variables
-duration=5 # number of seconds to make that request for 
-rate=3 # request per second
+duration=1 # number of seconds to make that request for 
+rate=1 # request per second
 timeout=60 #timeout for a request in seconds
 
 vegeta attack -duration=${duration}s -timeout=${timeout}s -rate=${rate} -targets=targets.list -output=results.bin
