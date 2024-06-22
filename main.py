@@ -9,6 +9,7 @@ router = APIRouter()
 
 class OrderRequest(BaseModel):
     item: str
+    id: str
 
 @router.post("/hungry")
 async def hungry(order: OrderRequest):    
@@ -16,10 +17,11 @@ async def hungry(order: OrderRequest):
     # asyncio.run(make_meal())
     if item == "burgers":                
         # burgers_task = await make_burgers()    
-        b_task = make_burgers()
-        # await b_task
         fries_task = asyncio.create_task(make_fries())                
         await fries_task  
+        b_task = await make_burgers()
+        # await b_task
+        
         # await burgers_task
 
               

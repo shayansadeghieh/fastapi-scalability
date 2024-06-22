@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Variables
-duration=1 # number of seconds to make that request for 
+duration=2 # number of seconds to make that request for 
 rate=1 # request per second
 timeout=60 #timeout for a request in seconds
 
