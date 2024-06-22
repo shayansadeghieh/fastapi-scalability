@@ -6,9 +6,10 @@ authors = ["shayan.sadeghieh"]
 package-mode = false
 
 [tool.poetry.dependencies]
-python = ">=3.11.5,<3.12"
+python = "^3.12"
 fastapi = "^0.109.2"
 uvicorn = "^0.27.1"
+pydantic = "^2.7.4"
 
 [build-system]
 requires = ["poetry-core"]
